@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+title: "Dual benefits theory — model code"
+message: "If you use this software, please cite it using these metadata."
+type: software
+authors:
+  - family-names: Shen
+    given-names: Sheng-Feng
+    orcid: "https://orcid.org/0000-0002-0631-6343"
+    affiliation: "Biodiversity Research Center, Academia Sinica, Taipei, Taiwan"
+  - family-names: Rubenstein
+    given-names: Dustin R.
+    orcid: "https://orcid.org/0000-0002-4999-3723"
+    affiliation: "Department of Ecology, Evolution and Environmental Biology, Columbia University, New York, NY, USA"
+license: MIT
+repository-code: "https://github.com/USERNAME/REPONAME"
+version: "1.0.0"
+date-released: "2026-06-13"
+keywords:
+  - cooperative breeding
+  - inclusive fitness
+  - dual benefits theory
+  - collective action
+  - resource defense
+  - group formation
+abstract: >-
+  Demographically explicit, inclusive-fitness model of group formation
+  accompanying Shen and Rubenstein, "The ecology and evolution of
+  cooperative breeding: linking dual benefits theory and inclusive
+  fitness theory." Reproduces the model-based figures (Box 1 and Box 3)
+  from a single verified engine that ports the Wolfram Mathematica model
+  of Shen, Liu and Rubenstein.
+preferred-citation:
+  type: article
+  title: "The ecology and evolution of cooperative breeding: linking dual benefits theory and inclusive fitness theory"
+  authors:
+    - family-names: Shen
+      given-names: Sheng-Feng
+    - family-names: Rubenstein
+      given-names: Dustin R.
+  journal: "Science Advances"
+  year: 2026
