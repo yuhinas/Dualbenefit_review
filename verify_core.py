@@ -87,9 +87,9 @@ check("insider control -> higher relatedness than outsider control", rbar1 > rba
 check("insider control: relatedness rises with size (r9 > r2)",
       R1['r'][-1] > R1['r'][0], f"r2={R1['r'][0]:.2f} -> r9={R1['r'][-1]:.2f}")
 # net-growth sign structure
-g1 = M.net_growth(R1['f'], m, p, k, R1['d'], R1['j'])
-sc1 = int(np.sum(np.diff(np.sign(g1)) != 0))
-print(f"      (insider-control net-growth sign changes = {sc1}; >1 => incipient bimodality)")
+check("insider control: net-growth drift crosses zero (a stable interior size exists)",
+      np.any(np.diff(np.sign(M.net_growth(R1['f'], m, p, k, R1['d'], R1['j']))) != 0),
+      "stationary group-size distribution has an interior mode")
 
 print("\n[6] warm-start vs cold-start, unique-equilibrium (baseline) regime")
 f_cold, *_ = M._solve_demography(m, p, mf, k, d, j)               # default Wolfram init

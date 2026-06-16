@@ -1,11 +1,18 @@
-"""
+r"""
 make_box1_fig.py
 ================
-Box 1 figure for "The evolution of group size and kin structure in complex societies".
+Box 1 figure for "The ecology and evolution of cooperative breeding: linking dual
+benefits theory and inclusive fitness theory".
 
-Both panels use INSIDER-controlled membership in the formal demographic group-formation
+Both panels use insider-controlled membership in the formal demographic group-formation
 model (iomodel.py, the port of Appendix S1); only the ecology differs, so the contrast is
-clean. Two ecologies are each solved to the eco-evolutionary equilibrium at a = 0.1:
+clean. Two ecologies are each solved to the eco-evolutionary equilibrium at a = 0.1.
+
+The two ecologies here use an ILLUSTRATIVE acceptance-geometry parameter set chosen to
+display the per-capita and acceptance curves clearly. These are distinct from the
+RD/CA endpoint parameters of the demographically explicit model used for the Box 3 figure
+(those are listed in rdca.py and in Table S3 of the Supplementary Materials); the Box 1
+figure is a schematic of the acceptance condition, not a source of quantitative means.
 
   RD-dominated : per-capita fecundity declines with group size (crowding), mortality
                  constant.  ->  per-capita performance w(n) declines.
